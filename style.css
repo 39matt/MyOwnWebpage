@@ -8,6 +8,8 @@
 
 .main-container {
     display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
     background-image: url(/img/background.jpg);
     height: 100vh;
     width: 75%;
@@ -15,6 +17,41 @@
     background-repeat: no-repeat;
     margin: 0 auto;
 }
+
+.header {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 84px;
+    font-weight: 900;
+    margin: 50px;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.navbar a{
+    text-decoration: none;
+    color: black;
+    font-size: 21px;
+    font-weight: 400;
+    padding: 25px;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+.navbar li {
+    list-style: none;
+}
+
 
 .footer {
     width: 100%;
